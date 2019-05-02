@@ -3,13 +3,19 @@ title: "R Notebook"
 output: github_document
 ---
 
-```{r}
+```{r,message=F}
 library(tidyverse)
 ```
 
-```{r}
+Este é meu primeiro relatório onde eu:
+
+*crio um plot
+*e me despido
+
+```{r, out.width="50%", fig.align="center"}
 mtcars %>% 
   ggplot (aes (mpg,cyl))+
-  geom_line()
+  geom_line(color="blue")
+  
 ```
 
